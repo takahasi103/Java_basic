@@ -39,7 +39,6 @@ class Person {
     return this.weight / this.height / this.height;
   }
   
-  // 以下2つを一つのメソッドで書き換えてください
   public void buy(Vehicle vehicle) {
     vehicle.setOwner(this);
   }
