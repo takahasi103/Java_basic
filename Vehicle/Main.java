@@ -17,13 +17,17 @@ class Main {
       Person person1 = new Person(firstName, lastName, age, height, weight);
       
       
-      Car car = new Car("フェラーリ", "赤");
-      Bicycle bicycle = new Bicycle("ビアンキ", "緑");
       System.out.println("乗り物を選んで下さい");
       System.out.print("1:自動車, 2:自転車 数字を教えて:");
       int myVehicle = scanner.nextInt();
       
       if (1 == myVehicle) {
+        System.out.println("【車の情報を入力して下さい】");
+        System.out.print("車種:");
+        String name = scanner.next();
+        System.out.print("車の色:");
+        String color = scanner.next();
+        Car car = new Car(name, color);
         person1.buy(car);
 
         System.out.println("【車の情報】");
@@ -40,6 +44,12 @@ class Main {
         int litre = scanner.nextInt();
         car.charge(litre);
       } else {
+        System.out.println("【自転車の情報を入力して下さい】");
+        System.out.print("車種:");
+        String name = scanner.next();
+        System.out.print("自転車の色:");
+        String color = scanner.next();
+        Bicycle bicycle = new Bicycle(name, color);
         person1.buy(bicycle);
 
         System.out.println("=================");
