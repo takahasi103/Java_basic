@@ -15,8 +15,7 @@ class Main {
       System.out.print("体重(kg):");
       double weight = scanner.nextDouble();
       Person person1 = new Person(firstName, lastName, age, height, weight);
-      
-      
+
       System.out.println("乗り物を選んで下さい");
       System.out.print("1:自動車, 2:自転車 数字を教えて:");
       int myVehicle = scanner.nextInt();
