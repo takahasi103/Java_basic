@@ -19,6 +19,8 @@ class Main {
       System.out.println("乗り物を選んで下さい");
       System.out.print("1:自動車, 2:自転車 数字を教えて:");
       int myVehicle = scanner.nextInt();
+
+      System.out.println("");
       
       if (1 == myVehicle) {
         System.out.println("【車の情報を入力して下さい】");
@@ -42,7 +44,7 @@ class Main {
         System.out.print("給油する量を入力してください：");
         int litre = scanner.nextInt();
         car.charge(litre);
-      } else {
+      } else if (2 == myVehicle) {
         System.out.println("【自転車の情報を入力して下さい】");
         System.out.print("車種:");
         String name = scanner.next();
@@ -61,6 +63,8 @@ class Main {
         System.out.print("走る距離を入力してください：");
         int bicycleDistance = scanner.nextInt();
         bicycle.run(bicycleDistance);
+      } else {
+        System.out.println("乗り物がありません");
       }
     }
   }
