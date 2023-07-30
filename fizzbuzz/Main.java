@@ -35,8 +35,16 @@ public class Main {
                 continue;
             }
         }
+        System.out.println("FizzBuzz");
         System.out.println(FizzBuzz);
+        System.out.println("");
+
+        System.out.println("Buzz");
         System.out.println(Buzz);
+        System.out.println("");
+
+        System.out.println("Fizz");
         System.out.println(Fizz);
+        System.out.println("");
     }
 }
