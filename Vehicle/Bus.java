@@ -11,7 +11,8 @@ class Bus extends Car {
     }
 
     public void printData() {
-        super.printData();
+        System.out.println("目的地:" + this.getName());
+        System.out.println("バスの色:" + this.getColor());
         System.out.println("乗車人数：" + this.passengers + "人");
     }
 
