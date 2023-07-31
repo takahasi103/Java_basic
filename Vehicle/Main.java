@@ -110,6 +110,18 @@ class Main {
           bicycle.run(bicycleDistance);
           break;
         case 3:
+          System.out.println("【バスの情報を入力して下さい");
+          System.out.print("目的地:");
+          String destinationName = scanner.next();
+          System.out.print("バスの色:");
+          String busColor = scanner.next();
+          System.out.print("乗客人数:");
+          int passengers = scanner.nextInt();
+          Bus bus = new Bus(destinationName, busColor, passengers);
+          person1.buy(bus);
+          System.out.println("=================");
+          System.out.println("【バスの情報】");
+          bus.printData();
           break;
         default:
           System.out.println("乗り物がありません");
