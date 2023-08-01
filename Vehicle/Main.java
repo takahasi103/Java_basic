@@ -122,6 +122,17 @@ class Main {
           System.out.println("=================");
           System.out.println("【バスの情報】");
           bus.printData();
+          System.out.println("-----------------");
+          System.out.println("【バスの運転手の情報】");
+          bus.getOwner().printData();
+          System.out.println("-----------------");
+          System.out.print("走る距離を入力してください：");
+          int busDistance = scanner.nextInt();
+          bus.run(busDistance);
+          System.out.println("-----------------");
+          System.out.print("給油する量を入力してください：");
+          int busLitre = scanner.nextInt();
+          bus.charge(busLitre);
           break;
         default:
           System.out.println("乗り物がありません");
