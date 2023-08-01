@@ -110,7 +110,7 @@ class Main {
           bicycle.run(bicycleDistance);
           break;
         case 3:
-          System.out.println("【バスの情報を入力して下さい");
+          System.out.println("【バスの情報を入力して下さい】");
           System.out.print("目的地:");
           String destinationName = scanner.next();
           System.out.print("バスの色:");

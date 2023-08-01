@@ -24,6 +24,8 @@ class Bus extends Car {
         super.run(distance);
         if (distance >= 50) {
             System.out.println(this.getName() + "に到着しました。");
+        } else {
+            System.out.println("まだ到着していません");
         }
     }
 
