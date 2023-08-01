@@ -20,4 +20,11 @@ class Bus extends Car {
         this.passengers = passengers;
     }
 
+    public void run(int distance) {
+        super.run(distance);
+        if (distance >= 50) {
+            System.out.println(this.getName() + "に到着しました。");
+        }
+    }
+
 }
