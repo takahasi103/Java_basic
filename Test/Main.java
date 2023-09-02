@@ -41,17 +41,17 @@ public class Main {
             array[i] = i * 5;
         }
 
-        // for (int i : array) {
-        //     System.out.print(i + " ");
-        // }
+        for (int i : array) {
+            System.out.print(i + " ");
+        }
 
         // System.out.println("");
 
-        for (int i = 0; i <= 10; i++) {
-            if (i % 2 != 0) {
-                System.out.print(array[i] + ",");
-            }
-        }
+        // for (int i = 0; i <= 10; i++) {
+        //     if (i % 2 != 0) {
+        //         System.out.print(array[i] + ",");
+        //     }
+        // }
 
         for (int i = 11; i < 20; i++) {
             if (i % 2 == 0) {
